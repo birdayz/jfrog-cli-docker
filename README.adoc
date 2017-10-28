@@ -1,0 +1,4 @@
+Downloads are written to/read from /data inside the container.
+Mount your .jfrog folder to / inside the container.
+
+ docker run -v $PWD:/data -v $HOME/.jfrog:/.jfrog birdayz/jfrog-cli-docker:latest help
